@@ -12,7 +12,6 @@ ATank* ATankPlayerController::GetControlOfTank()
 void ATankPlayerController::BeginPlay() 
 {
     Super::BeginPlay();
-    UE_LOG(LogTemp, Warning, TEXT("Game Starts!"));
 
     ATank* TankPossessed = GetControlOfTank();
     if(!TankPossessed)
